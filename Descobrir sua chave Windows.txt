@@ -1,9 +1,9 @@
 
-DESCOBRIR SERIAL
+Esqueceu sua chave de Ativação do seu Windows?
 
 
 ###############################################################################################
-Passo 1. Abra o Bloco de notas e cole o código abaixo;
+Passo 1. Abra o bloco de notas e cole o código abaixo;
 ###############################################################################################
 Passo 2. No bloco de notas salve em .vbs na Área de trabalho
 ###############################################################################################
