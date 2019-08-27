@@ -1,0 +1,11 @@
+Link para Download:
+https://balsamiq.com/wireframes/desktop/
+
+Depois de instalado vá até a guia:
+Help > Register Balsamiq
+
+Insira a License Name: 
+leexij@gmail.com
+
+Insira a License Key: 
+eNrzzU/OLi0odswsqslJTa3IzHJIz03MzNFLzs+tMTQyNrcwsTQyAIEa5xpDAIFxDy8k
