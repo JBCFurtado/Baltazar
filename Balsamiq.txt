@@ -1,8 +1,8 @@
-Link para Download:
+Faça Download no link abaixo do Mockups e o instale:
 https://balsamiq.com/wireframes/desktop/
 
 Depois de instalado vá até a guia:
-Help > Register Balsamiq
+Help > Register...
 
 Insira a License Name: 
 leexij@gmail.com

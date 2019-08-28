@@ -1,14 +1,10 @@
 
 Esqueceu sua chave de Ativação do seu Windows?
+Como descobrir?
 
-
 ###############################################################################################
-Passo 1. Abra o bloco de notas e cole o código abaixo;
-###############################################################################################
-Passo 2. No bloco de notas salve em .vbs na Área de trabalho
-###############################################################################################
-Passo 3. Só executar
-###############################################################################################
+Passo 1: 
+Abra o bloco de notas e cole todo o código abaixo:
 
 Set WshShell = CreateObject("WScript.Shell")
 MsgBox ConvertToKey(WshShell.RegRead("HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId"))
@@ -35,5 +31,14 @@ End If
 Loop While i >= 0
 ConvertToKey = KeyOutput
 End Function
+
+###############################################################################################
+Passo 2:
+No bloco de notas salve o arquivo com a extenção .vbs (exemplo: NomeQualquer.vbs) na Área de trabalho
+###############################################################################################
+Passo 3:
+Agora é só executá-lo
+###############################################################################################
+
 
 
