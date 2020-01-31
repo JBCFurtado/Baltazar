@@ -1,11 +1,46 @@
-Faça Download no link abaixo do Mockups e o instale:
+Instalando Mockups 3 para Desktop no Linux
+O Balsamiq Wireframes é uma ferramenta rápida de interfaces de baixa fidelidade que reproduz a experiência de desenhar em um bloco de notas ou quadro branco, mas usando um computador.
+Wireframe é um desenho básico, como um esqueleto, que demonstra de forma direta a arquitetura de como o objeto (interface, página da internet, modelo, etc.) final será de acordo com as especificações relatadas.
+
+Isso realmente força você a se concentrar na estrutura e no conteúdo, evitando discussões demoradas sobre cores e detalhes que devem aparecer mais tarde no processo.
+
+Aqui estão as instruções para instalação no Ubuntu 19.04 :
+
+1_Abra o terminal e instale o Wine:
+sudo apt install wine
+
+2_Faça o download do pacote offline com o nome Balsamiq_Mockups_3.5.17_bundled.zip e instale-o em / opt:
 https://balsamiq.com/wireframes/desktop/
 
-Depois de instalado vá até a guia:
-Help > Register...
+3_Execute os seguintes comandos substituindo x e y pelo número da versão que você baixou:
+sudo unzip Downloads/Balsamiq_Mockups_3.5.17_bundled.zip -d /opt
+
+sudo mv /opt/Balsamiq_Mockups_3 /opt/balsamiq_3_5_17
+
+sudo rm -f /opt/balsamiq && sudo ln -s /opt/balsamiq_3_5_17 /opt/balsamiq
+
+sudo mv /opt/balsamiq/Balsamiq\ Mockups\ 3.exe /opt/balsamiq/balsamiq.exe
+
+4_Execute-o:
+wine /opt/balsamiq/balsamiq.exe
+
+5_Adicione um ícone de inicialização:
+echo '[Desktop Entry]
+Encoding=UTF-8
+Name=Balsamiq Mockups
+Icon=/opt/balsamiq/icons/mockups_ico_48.png
+Exec=wine /opt/balsamiq/balsamiq.exe
+Type=Application
+Categories=Graphics;
+MimeType=application/x-xdg-protocol-tg;x-scheme-handler/tg;
+' |sudo tee /usr/share/applications/balsamiq.desktop
+
+6_Depois de instalado vá até a guia:
+Help > Register Balsamiq
 
 Insira a License Name: 
 leexij@gmail.com
 
 Insira a License Key: 
 eNrzzU/OLi0odswsqslJTa3IzHJIz03MzNFLzs+tMTQyNrcwsTQyAIEa5xpDAIFxDy8k
+
